@@ -6,7 +6,7 @@ const Footer =() =>{
         <footer className="text-center text-lg-start">
        
         <div className="text-center p-3">
-         <span className="fontColor"> © 2021 Copyright </span>
+         <span className="fontColor"> © 2021 Pavla,Petra,Filip </span>
         </div>
       
       </footer>

@@ -4,7 +4,7 @@ import './style.css'
 const Home =() =>{
     return(
         <div className = "menu_conteiner">
-        <h1 className= "menu _title">Dopis ježíškovi</h1>
+        <h1 className= "menu _title">Dopis Ježíškovi</h1>
         </div>
     )
 }
