@@ -34,7 +34,7 @@ class NewWish extends Component{
             },
             body: JSON.stringify(this.state.item)
         })
-        window.location="/"
+        window.location="/Wishlist"
     }
   
 
