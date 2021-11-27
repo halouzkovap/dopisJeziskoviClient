@@ -11,6 +11,7 @@ import { styled } from '@mui/material/styles';
 import './style.css';
 import { Link } from 'react-router-dom';
 
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
       backgroundColor: "rgba(0, 0, 0, 0.8)",
@@ -42,7 +43,11 @@ class Wishlist extends Component{
        
     }
 
-    componentDidMount() {
+    componentDidMount(){
+      this.loadData()
+    }
+
+    loadData() {
         fetch('https://vanoceb.azurewebsites.net/moje-prani')
             .then(response => response.json())
             .then(data => this.setState({wishs: data}));
@@ -55,10 +60,8 @@ class Wishlist extends Component{
               'Accept': 'application/json',
               'Content-Type': 'application/json'
           }
-      }).then(() => {
-          let updateWishes = [...this.state.wishes].filter(i => i.id !== id);
-          this.setState({wishes: updateWishes});
-      });
+      })
+      this.loadData()
   }
 
 
