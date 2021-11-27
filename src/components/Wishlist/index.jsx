@@ -48,6 +48,21 @@ class Wishlist extends Component{
             .then(data => this.setState({wishs: data}));
     }
 
+    async remove(id) {
+      await fetch(`https://vanoceb.azurewebsites.net/smazat-prani?id=${id}`, {
+          method: 'POST',
+          headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+          }
+      }).then(() => {
+          let updateWishes = [...this.state.wishes].filter(i => i.id !== id);
+          this.setState({wishes: updateWishes});
+      });
+  }
+
+
+
    render(){
     const {wishs} = this.state;
 

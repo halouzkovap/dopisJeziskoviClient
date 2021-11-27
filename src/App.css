@@ -2,3 +2,10 @@ body{
   background-image:url(./assets/vanoce.jpg);
   background-size: cover;
 }
+
+.mainContainer{
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}

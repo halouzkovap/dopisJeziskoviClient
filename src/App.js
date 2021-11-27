@@ -10,11 +10,13 @@ import Navbar from './components/Navbar';
 import Wishlist from './components/Wishlist';
 import OtherWishs from './components/OtherWishs';
 import NewWish from './components/NewWish';
+import Footer from './components/Footer'
 
 class App extends Component {
   render(){
    return (
     <Router>
+    <div className="mainContainer">
      <Navbar/>
 
   
@@ -25,7 +27,8 @@ class App extends Component {
       <Route path="/otherWishs" element={<OtherWishs/>}/>
       <Route path="/newWish" element={<NewWish/>}/>
     </Routes>
-
+    <Footer/>
+    </div>
     </Router>
   );
   }
