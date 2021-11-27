@@ -1,18 +1,12 @@
-.menu_conteiner{
-    text-align: center;
+.new_with_font{
     color: beige;
-    font-size: 45px;
+}
+
+
+.new_wish_container{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
-
-}
-
-.menu _title{
-  font-size: 40px;
- 
-   
-
 }
