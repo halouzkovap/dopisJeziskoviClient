@@ -4,7 +4,6 @@ import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
 import './style.css'
 
 
-
 class NewWish extends Component{
     
 
