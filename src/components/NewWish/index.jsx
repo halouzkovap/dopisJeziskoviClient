@@ -39,7 +39,6 @@ class NewWish extends Component{
   
 
     render(){
-        const {item} = this.state;
         return(
             <div className="new_wish_container">
             <Container>
